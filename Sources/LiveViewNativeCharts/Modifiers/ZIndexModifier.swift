@@ -39,6 +39,8 @@ struct ZIndexModifier: ContentModifier {
     ) -> Builder.Content {
         #if swift(>=5.9)
         content.zIndex(value)
-	#endif
+	#else
+	content
+        #endif
     }
 }
