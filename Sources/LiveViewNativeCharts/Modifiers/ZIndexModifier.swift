@@ -19,7 +19,7 @@ import LiveViewNative
 ///
 /// ## Arguments
 /// * ``value``
-#if swift(>=5.8)
+#if swift(>=5.9)
 @_documentation(visibility: public)
 #endif
 @available(iOS 17, macOS 14, tvOS 17, watchOS 10, *)
@@ -27,7 +27,7 @@ struct ZIndexModifier: ContentModifier {
     typealias Builder = ChartContentBuilder
     
     /// The Z order.
-    #if swift(>=5.8)
+    #if swift(>=5.9)
     @_documentation(visibility: public)
     #endif
     let value: Double
